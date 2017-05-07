@@ -20,6 +20,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'rest-client'
 
@@ -44,6 +47,9 @@ group :development, :test do
   gem 'capybara', '~> 2.14'
   gem 'rspec-rails', '~> 3.5'
 end
+
+
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
