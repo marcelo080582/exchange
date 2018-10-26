@@ -6,7 +6,13 @@ Aplicativo que converte o valor de uma moeda para outra qualquer.
 
 * ruby 2.4.0
 
-* Faça o seu fork no projeto e clone ele para sua máquina
+* Clone o projeto para sua máquina
+
+git clone git@github.com:marcelo080582/exchange.git
+
+* Acesse a pasta do projeto
+
+cd exchange
 
 * Rode:
 
