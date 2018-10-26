@@ -16,14 +16,18 @@ cd exchange
 
 * Rode:
 
-bundle install
+docker-compose build
 
 * Crie um arquivo de configuração do banco de dados:
 
 cp config/database.example.yml config/database.yml
 
-* Execute o comando rake db:create para cria seu banco de dados.
+* Crie o banco de dados.
 
-* Execute o comando rake db:migrate para criar todas as tabelas no seu banco de dados.
+docker-compose run website rails db:create
 
-* Execute o comando rails s para subir o servidor rails
+* Suba o servidor
+
+docker-compose up
+
+* Acesse no browser o endereço http://localhost:3000/
