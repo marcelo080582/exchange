@@ -1,24 +1,23 @@
-# README
+# OneBitCode Exchange
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicativo que converte o valor de uma moeda para outra qualquer.
 
-Things you may want to cover:
+* Rails 5.1.6
 
-* Ruby version
+* ruby 2.4.0
 
-* System dependencies
+* Faça o seu fork no projeto e clone ele para sua máquina
 
-* Configuration
+* Rode:
 
-* Database creation
+bundle install
 
-* Database initialization
+* Crie um arquivo de configuração do banco de dados:
 
-* How to run the test suite
+cp config/database.example.yml config/database.yml
 
-* Services (job queues, cache servers, search engines, etc.)
+* Execute o comando rake db:create para cria seu banco de dados.
 
-* Deployment instructions
+* Execute o comando rake db:migrate para criar todas as tabelas no seu banco de dados.
 
-* ...
+* Execute o comando rails s para subir o servidor rails
